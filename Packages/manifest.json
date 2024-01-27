@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.atteneder.gltfast": "6.0.1",
+    "com.bezel.unity": "https://github.com/bezi3d/bezi_unity_bridge.git?path=/BeziUnityBridgePlugin#main",
     "com.meta.xr.sdk.all": "60.0.0",
     "com.normalvr.normcore": "2.7.2",
     "com.unity.collab-proxy": "2.2.0",
@@ -50,6 +52,13 @@
       "scopes": [
         "com.normalvr",
         "io.normcore"
+      ]
+    },
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.atteneder"
       ]
     }
   ]
