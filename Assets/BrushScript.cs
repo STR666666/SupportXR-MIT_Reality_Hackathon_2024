@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction;
-using Normal.Realtime;
 
 public class Brush : MonoBehaviour
 {
     // Prefab to instantiate when we draw a new brush stroke
+    [SerializeField] private GameObject _brushStrokePrefab;
+
     // Which hand should this brush instance track?
     public GameObject LeftHand;
     public GameObject RightHand;
@@ -30,7 +31,7 @@ public class Brush : MonoBehaviour
         if (LtriggerPressed && _activeBrushStrokeL == null)
         {
             // Instantiate a copy of the Brush Stroke prefab.
-            GameObject brushStrokeGameObject = Realtime.Instantiate("BrushStroke");
+            GameObject brushStrokeGameObject = Instantiate(_brushStrokePrefab);
 
             // Grab the BrushStroke component from it
             _activeBrushStrokeL = brushStrokeGameObject.GetComponent<BrushStroke>();
@@ -41,7 +42,7 @@ public class Brush : MonoBehaviour
         if (RtriggerPressed && _activeBrushStrokeR == null)
         {
             // Instantiate a copy of the Brush Stroke prefab.
-            GameObject brushStrokeGameObject = Realtime.Instantiate("BrushStroke");
+            GameObject brushStrokeGameObject = Instantiate(_brushStrokePrefab);
 
             // Grab the BrushStroke component from it
             _activeBrushStrokeR = brushStrokeGameObject.GetComponent<BrushStroke>();

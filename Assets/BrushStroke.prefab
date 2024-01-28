@@ -154,7 +154,7 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 0}
   - componentID: 2
-    component: {fileID: 114499251600465828}
+    component: {fileID: 0}
   _childViews: []
 --- !u!114 &114499251600465828
 MonoBehaviour:

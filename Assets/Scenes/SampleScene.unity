@@ -19143,9 +19143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ef2c8c25c570f468f2bc2894e3f766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _brushStrokePrefab: {fileID: 1196413553089462, guid: 749d541d662db9f4fa312e0e4fb6cef1, type: 3}
   LeftHand: {fileID: 81674637}
   RightHand: {fileID: 121849101}
-  Sensitivity: 0
+  Sensitivity: 0.3
 --- !u!4 &1828601337
 Transform:
   m_ObjectHideFlags: 0
