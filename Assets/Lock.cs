@@ -24,8 +24,6 @@ public class Lock : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-
-        Debug.Log("YAY");
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (!(Locked) && collision.gameObject.tag == CollisionTag)
         {

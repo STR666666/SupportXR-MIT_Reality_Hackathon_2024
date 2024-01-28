@@ -95,8 +95,8 @@ public class BrushStrokeMesh : MonoBehaviour {
     }
 
     private void CalculateVerticesAndNormalForRibbonPoint(Vector3 position, Quaternion rotation, float width, out Vector3 p1, out Vector3 p2, out Vector3 normal) {
-        p1     = position + rotation * new Vector3(-width/2.0f, 0.0f, 0.0f);
-        p2     = position + rotation * new Vector3( width/2.0f, 0.0f, 0.0f);
+        p1     = position + rotation * new Vector3(-width/2.0f, width/2.0f, 0.0f);
+        p2     = position + rotation * new Vector3( width/2.0f, -width/2.0f, 0.0f);
         normal = rotation * Vector3.up;
     }
 

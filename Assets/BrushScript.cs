@@ -24,8 +24,8 @@ public class Brush : MonoBehaviour
         var RHand = RightHand.GetComponent<OVRHand>();
 
         // Figure out if the trigger is pressed or not
-        bool LtriggerPressed = (LHand.GetFingerPinchStrength(OVRHand.HandFinger.Ring) >= Sensitivity);
-        bool RtriggerPressed = (RHand.GetFingerPinchStrength(OVRHand.HandFinger.Ring) >= Sensitivity);
+        bool LtriggerPressed = (LHand.GetFingerPinchStrength(OVRHand.HandFinger.Ring) >= Sensitivity) && (LHand.GetFingerPinchStrength(OVRHand.HandFinger.Index) <= Sensitivity);
+        bool RtriggerPressed = (RHand.GetFingerPinchStrength(OVRHand.HandFinger.Ring) >= Sensitivity) && (LHand.GetFingerPinchStrength(OVRHand.HandFinger.Index) <= Sensitivity);
 
         // If the trigger is pressed and we haven't created a new brush stroke to draw, create one!
         if (LtriggerPressed && _activeBrushStrokeL == null)

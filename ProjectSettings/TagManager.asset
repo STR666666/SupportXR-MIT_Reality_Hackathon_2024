@@ -7,6 +7,9 @@ TagManager:
   - Wheel002
   - Lock
   - Server
+  - Panel
+  - Chip
+  - Gear
   layers:
   - Default
   - TransparentFX

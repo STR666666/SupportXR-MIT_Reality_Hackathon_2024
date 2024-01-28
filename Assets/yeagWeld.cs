@@ -44,6 +44,8 @@ public class yeagWeld : MonoBehaviour
                     LockedTo = null;
                 }
                 yeagTwo.GetComponent<RealtimeTransform>().RequestOwnership();
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
                 break;
             case PointerEventType.Unselect:
                 foreach (var obj in currentCollisions)
@@ -60,6 +62,8 @@ public class yeagWeld : MonoBehaviour
                             yeagOne.transform.rotation = obj.transform.rotation;
                             lockedc.ClonedPrefab.SetActive(false);
                             LockedTo = obj;
+                            AudioSource audio2 = LockedTo.GetComponent<AudioSource>();
+                            audio2.Play();
                         }
                     }
                 }
@@ -79,6 +83,8 @@ public class yeagWeld : MonoBehaviour
                             transform.rotation = obj.transform.rotation;
                             lockedc.ClonedPrefab.SetActive(false);
                             LockedTo = obj;
+                            AudioSource audio2 = LockedTo.GetComponent<AudioSource>();
+                            audio2.Play();
                         }
                     }
                 }
