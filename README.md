@@ -2,7 +2,7 @@
 
 **Getting Started**:
 
-<https://devpost.com/software/myit>
+**Devpost:** <https://devpost.com/software/myit>
 
 **Submission Video:** <https://www.youtube.com/watch?v=FdJI2-vcAzA>
 
