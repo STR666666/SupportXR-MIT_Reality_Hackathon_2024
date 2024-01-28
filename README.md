@@ -31,3 +31,5 @@ SupportXR is a tool that allows very interactive long distance tech support on a
 ## Shout-Outs
 
 Meta Quest Mentors: For help with the Meta Quest All In One SDK
+
+**Special Shout-Out:** Elijah Knisley from Foundry for helping with our development with the Normcore product.
